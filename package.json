@@ -1,0 +1,27 @@
+{
+  "name": "scrape-to-dashboard",
+  "version": "1.0.0",
+  "description": "Polite scraper -> SQLite -> static HTML dashboard demo (targets books.toscrape.com)",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.5"
+  },
+  "scripts": {
+    "scrape": "tsx src/cli.ts",
+    "dashboard": "tsx src/dashboard.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "undici": "^8.11.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.4"
+  }
+}

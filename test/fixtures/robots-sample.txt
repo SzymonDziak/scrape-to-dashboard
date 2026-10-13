@@ -1,0 +1,9 @@
+# sample robots.txt used by tests
+User-agent: *
+Disallow: /private/
+Disallow: /*.json$
+Allow: /private/public-report.html
+Crawl-delay: 2
+
+User-agent: scrape-to-dashboard-demo
+Disallow: /blocked
